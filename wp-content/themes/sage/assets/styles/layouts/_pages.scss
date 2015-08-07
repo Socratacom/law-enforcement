@@ -1,0 +1,89 @@
+.lead {
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: $font-light;
+    line-height: normal;
+}
+.vertical-align {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+// SECTIONS
+// Background Colors
+.clouds {
+	background-color:$clouds;
+}
+.wet-asphalt {
+	background-color:$wet-asphalt;
+	color:white;
+}
+// Hero
+.section-padding {
+	padding:100px 0;
+}
+.hero {
+	position: relative;
+	width:100%;
+	height:100vh;
+}
+.hero:before {
+	content: "";
+	background-color:$clouds;
+	background-image:url(../images/hero.jpg);
+	background-repeat:no-repeat;
+	backgound-position:center center;
+	background-size:cover;
+	width:100%;
+	height: 100vh;
+	position: absolute;
+}
+.hero:after {
+	content: "";
+	background-image:url(../images/pattern-stripe.png);
+	width:100%;
+	height: 100vh;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 1;
+	opacity: .3;
+}
+.hero * {
+	color:$inverse;
+	text-shadow:0px 0px 5px #000;
+}
+.hero .hero-wrapper {
+	position:absolute;
+	z-index:2;
+	width:100%;
+	height:100vh;
+}
+.hero ul.jump-links {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.hero .jump-links li {
+	display:inline-block;
+	position: relative;
+	padding-right:20px;
+	margin-right:20px
+}
+.hero .jump-links li:last-child {
+	margin:0;
+}
+.hero .jump-links a {
+	color:$sun-flower;
+}
+.hero .jump-links li:after {
+content: "\f0a9";
+  font-family:FontAwesome;  
+  position: absolute;
+  right:0;
+  top:0;
+  color:$sun-flower;
+  font-size: 16px;
+}
