@@ -60,5 +60,17 @@ function remove_menus(){
 }
 add_action( 'admin_menu', __NAMESPACE__ . '\\remove_menus' );
 
+/**
+ * Marketo Form [marketo-form]
+ */
+function marketo_form() {
+  return '
+<script src="//app-abk.marketo.com/js/forms2/js/forms2.min.js"></script>
+<form id="mktoForm_2340"></form>
+<script>MktoForms2.loadForm("//app-abk.marketo.com", "851-SII-641", 2340);</script>
+  ';
+}
+add_shortcode('marketo-form', __NAMESPACE__ . '\\marketo_form');
+
 
 

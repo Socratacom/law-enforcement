@@ -12,12 +12,45 @@
 	transform: translateY(-50%);
 }
 // SECTIONS
+section {
+	position:relative;
+}
+.section-image {
+	position:absolute;
+	top:0; 
+	width:50%; 
+	height:100%;
+	background-color:$clouds;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover; 
+}
+.trust-image {
+	background-image:url(../images/trust.jpg);
+	right:50%;
+}
+.engage-image {
+	background-image:url(../images/engage.jpg); 
+	left:50%;
+}
+.conversation-image {	
+	background-image:url(../images/conversation.jpg);
+	right:50%;
+}
 // Background Colors
 .clouds {
 	background-color:$clouds;
 }
 .wet-asphalt {
 	background-color:$wet-asphalt;
+	color:white;
+}
+.nephritis {
+	background-color:$nephritis;
+	color:white;
+}
+.pumpkin {
+	background-color:$pumpkin;
 	color:white;
 }
 // Hero
@@ -75,7 +108,7 @@
 .hero .jump-links li:last-child {
 	margin:0;
 }
-.hero .jump-links a {
+.hero .jump-links a, .hero .jump-links li:after {
 	color:$sun-flower;
 }
 .hero .jump-links li:after {
@@ -84,6 +117,123 @@ content: "\f0a9";
   position: absolute;
   right:0;
   top:0;
-  color:$sun-flower;
   font-size: 16px;
+}
+// Stat
+.stat {
+	margin:0;
+	font-weight:300;
+}
+.stat span {
+	font-size:200%;
+}
+// Spotlight
+.spotlight {
+	position: relative;
+	padding-left:20px !important;
+	display:block;
+}
+.spotlight:before {
+	content: "\f0eb";
+	font-family:FontAwesome;  
+	position: absolute;
+	left:0;
+	top:1px;
+	font-size: 16px;
+	color:$peter-river;
+}
+// Features
+.feature {
+	padding-top:50px;
+}
+// Marketo 
+.marketo-form {
+  // used !important to get around Marketo in-line styles
+  form {
+    width: 100% !important;
+    height:205px !important;
+    overflow:hidden;
+    position:relative;
+    padding:0 !important;
+    .mktoFormRow {
+    	margin-bottom:10px !important;
+      .mktoFormCol, .mktoFieldWrap {
+        width: 100%;
+        margin-bottom: 0 !important;
+      }
+      .mktoOffset, label {
+        display: none;
+      }
+      .mktoGutter {
+        width: 0px !important;
+      }
+      input {
+        width: 100% !important;
+        border: solid 1px $concrete !important;
+        padding: 10px;
+        margin-top: 0px;
+        border-radius:0 !important;
+        box-shadow: none !important;
+        height:33px !important;
+        line-height:normal;
+        font-size:13px !important;
+      }
+      textarea {
+        width: 100% !important;
+        border: none !important;
+        padding: 10px;
+        box-shadow: none !important;
+
+      }
+      input#Title {
+        width: 50% !important;
+      }
+      .mktoError {
+        left:10px !important;
+        top: 26px !important;
+        .mktoErrorMsg {
+          border-radius:0 !important;
+          background-image:none !important;
+        }
+      }
+    }
+    .mktoButtonRow {
+      position: absolute;
+      right: 0px;
+      width: 42%;
+      bottom: 0px;
+      .mktoButtonWrap {
+        margin-left: 0 !important;          
+        .mktoButton {
+          border: none !important;
+          background-image: none !important;
+          box-shadow: none !important;
+          width: 100% !important;
+          padding: 0 !important;
+          background-color: $peter-river !important;
+          border-radius:0 !important;
+          height:33px !important;
+          color:#fff !important;
+          &:hover {
+            border: none !important;
+            background-color: darken($belize-hole, 10%) !important;
+          }
+        }
+      }
+    }
+  }
+}
+.demo {
+  // used !important to get around Marketo in-line styles
+  form {
+    height:320px !important;
+    .mktoFormRow {
+      input#Title {
+        width: 100% !important;
+      }
+    }
+    .mktoButtonRow {
+      left: 0px !important;
+    }
+  }
 }
