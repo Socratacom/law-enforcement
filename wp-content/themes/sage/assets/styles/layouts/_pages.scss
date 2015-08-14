@@ -53,6 +53,10 @@ section {
 	background-color:$pumpkin;
 	color:white;
 }
+.belize-hole {
+  background-color:$belize-hole;
+  color:white;
+}
 // Hero
 .section-padding {
 	padding:100px 0;
@@ -119,14 +123,23 @@ content: "\f0a9";
   top:0;
   font-size: 16px;
 }
+.hero .jump-links a:hover {
+  color:white;
+}
 // Stat
-.stat {
-	margin:0;
-	font-weight:300;
+.stat * {
+  color:white;
+  font-weight: 300;
 }
-.stat span {
-	font-size:200%;
+.stat .source {
+  font-style: italic;
+  padding-top:15px;
 }
+.stat a:hover {
+  color:#fff;
+  text-decoration: underline;
+}
+
 // Spotlight
 .spotlight {
 	position: relative;
