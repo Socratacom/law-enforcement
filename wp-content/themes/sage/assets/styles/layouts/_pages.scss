@@ -68,7 +68,7 @@ section {
 }
 .hero:before {
 	content: "";
-	background-color:$clouds;
+	background-color:$gray-dark;
 	background-image:url(../images/hero.jpg);
 	background-repeat:no-repeat;
 	backgound-position:center center;
@@ -125,6 +125,11 @@ content: "\f0a9";
 }
 .hero .jump-links a:hover {
   color:white;
+}
+// Screen Shots
+.screen-shots img {
+  margin-top:50px;
+  box-shadow: 0 0 10px $silver;
 }
 // Stat
 .stat * {
