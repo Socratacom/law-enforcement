@@ -1,44 +1,69 @@
-body {
-	font-family: 'Lato', sans-serif;
-	color:$midnight-blue;
-	font-weight:$font-medium;
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+	body {
+		font-family: 'Lato', sans-serif;
+		color:$midnight-blue;
+		font-weight:$font-medium;
+	}
+	.main {
+		padding:0 !important;
+	}
+	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+		font-family: inherit;
+		font-weight: $font-bold;
+		line-height: 1.1;
+		color: inherit;
+	}    
 }
-.main {
-	padding:0 !important;
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
 }
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: inherit;
-    font-weight: $font-bold;
-    line-height: 1.1;
-    color: inherit;
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
 }
-h1 {
-	font-size:48px;
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
 }
-h2 {
-	font-size:32px;
-}
-h3 {
-	font-size:24px;
-}
-h4 {
-	font-size:20px;
-}
-h5 {
-	font-size:18px;
-}
-p, li {
-	font-size: 17px;
-	line-height: 1.5;
-	font-weight:400;
-}
-p {
-    margin: 0 0 15px;
-}
-a {
-	color:$peter-river;
-}
-a:hover {
-	color:$belize-hole;
-	text-decoration:none;
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+
+
+	h1 {
+		font-size:48px;
+	}
+	h2 {
+		font-size:32px;
+	}
+	h3 {
+		font-size:24px;
+	}
+	h4 {
+		font-size:20px;
+	}
+	h5 {
+		font-size:18px;
+	}
+	p, li {
+		font-size: 17px;
+		font-weight:400;
+	}
+	p {
+	    margin-bottom: 1.5em;
+	}
+	a {
+		color:$peter-river;
+	}
+	a:hover {
+		color:$belize-hole;
+		text-decoration:none;
+	}
 }
