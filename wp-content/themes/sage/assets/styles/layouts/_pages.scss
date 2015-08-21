@@ -25,11 +25,13 @@
   	background-color:$clouds;
   	background-repeat:no-repeat;
   	background-attachment:fixed;
-  	background-size:cover; 
+  	background-size:cover;
+    background-position: center;
   }
   .trust-image {
   	background-image:url(../images/trust.jpg);
   	right:50%;
+    background-position: left;
   }
   .engage-image {
   	background-image:url(../images/engage.jpg); 
@@ -38,6 +40,7 @@
   .conversation-image {	
   	background-image:url(../images/conversation.jpg);
   	right:50%;
+    background-position: left;
   }
   // Background Colors
   .clouds {
@@ -61,7 +64,7 @@
   }
   // Hero
   .section-padding {
-  	padding:100px 0;
+  	padding:50px 0;
   }
   .hero {
   	position: relative;
@@ -163,8 +166,8 @@
   	color:$peter-river;
   }
   // Features
-  .feature {
-  	padding-top:50px;
+  .feature img {
+  	margin-top:50px;
   }
   // Marketo 
   .marketo-form {
@@ -267,7 +270,9 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
+  .section-padding {
+    padding:100px 0;
+  }
 }
 
 /* Medium Devices, Desktops */
