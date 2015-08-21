@@ -169,18 +169,19 @@
   .feature img {
   	margin-top:50px;
   }
-  // Marketo 
+  // Marketo
   .marketo-form {
     // used !important to get around Marketo in-line styles
-    form {
-      width: 100% !important;
-      height:205px !important;
-      overflow:hidden;
+    form[style] {
+      font-family: inherit !important;
+      font-size: inherit !important;
+      width: 100% !important;  
+    }
+    form {          
       position:relative;
       padding:0 !important;
-      margin-top:20px;
       .mktoFormRow {
-      	margin-bottom:10px !important;
+        margin-bottom:10px !important;
         .mktoFormCol, .mktoFieldWrap {
           width: 100%;
           margin-bottom: 0 !important;
@@ -193,12 +194,12 @@
         }
         input {
           width: 100% !important;
-          border: solid 1px $concrete !important;
-          padding: 10px;
+          border: solid 1px $silver !important;
           margin-top: 0px;
+          padding-left:15px;
           border-radius:0 !important;
           box-shadow: none !important;
-          height:33px !important;
+          height:40px !important;
           line-height:normal;
           font-size:13px !important;
         }
@@ -207,10 +208,6 @@
           border: none !important;
           padding: 10px;
           box-shadow: none !important;
-
-        }
-        input#Title {
-          width: 50% !important;
         }
         .mktoError {
           left:10px !important;
@@ -218,6 +215,7 @@
           .mktoErrorMsg {
             border-radius:0 !important;
             background-image:none !important;
+            border:none !important;
           }
         }
       }
@@ -236,7 +234,7 @@
             padding: 0 !important;
             background-color: $peter-river !important;
             border-radius:0 !important;
-            height:33px !important;
+            height:40px !important;
             color:#fff !important;
             &:hover {
               border: none !important;
@@ -247,20 +245,11 @@
       }
     }
   }
-  .demo {
-    // used !important to get around Marketo in-line styles
-    form {
-      height:320px !important;
-      .mktoFormRow {
-        input#Title {
-          width: 100% !important;
-        }
-      }
-      .mktoButtonRow {
-        left: 0px !important;
-      }
+  .learn-more-form {
+    input#Phone {
+      width: 50% !important;
     }
-  }    
+  }
 }
 
 /* Extra Small Devices, Phones */ 
